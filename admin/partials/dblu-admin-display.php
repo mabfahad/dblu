@@ -14,3 +14,9 @@
 ?>
 
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
+<?php
+if (!is_writable(ABSPATH)) {
+    echo "The root directory is not writable";
+} else {
+    echo "The root directory is writable";
+}
