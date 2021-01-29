@@ -100,4 +100,15 @@ class Dblu_Admin {
 
 	}
 
+	public function admin_menus_items() {
+		add_menu_page('dblu', 'BackUp Blubird', 'manage_options', 'backupBlubird', function (){ $this->dblu_admin_main(); } ,'',10);
+
+
+
+	}
+
+	public function dblu_admin_main() {
+		include plugin_dir_path( dirname( __FILE__ ) ).'admin/partials/dblu-admin-display.php';
+	}
+
 }

@@ -33,4 +33,8 @@ class Dblu_Activator {
 
 	}
 
+	public static function createPluginMenu() {
+
+    }
+
 }
