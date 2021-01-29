@@ -31,7 +31,7 @@ class Dblu_Activator {
 	 */
 	public static function activate() {
         if (is_writable(ABSPATH)) :
-            return mkdir(ABSPATH."/backbbil", 755);
+            return mkdir(DBLU_DIRECTORY, 755);
         else:
             wp_die( 'The root path of the site is not writable.<br><a href="'.admin_url('plugins.php').'">Back to plugins page</a>' );
 

@@ -29,7 +29,7 @@
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
-
+define('DBLU_DIRECTORY',ABSPATH.'/backupblu');
 /**
  * Currently plugin version.
  * Start at version 1.0.0 and use SemVer - https://semver.org
